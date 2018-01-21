@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.wustor.usermoudle">
+
+
+    <application
+        android:name=".debug.UserApplication"
+        android:allowBackup="true"
+        android:label="@string/user_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:label">
+        <activity android:name=".UserActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.wustor.usermoudle.account.ApplyActivity"
+            android:label="注册"
+            android:theme="@style/activityTheme" />
+
+        <activity
+            android:name="com.wustor.usermoudle.account.BindAccountActivity"
+            android:label="绑定账号"
+            android:theme="@style/activityTheme" />
+
+        <activity
+            android:name="com.wustor.usermoudle.account.ForgotPasswordOneStepActivity"
+            android:label="忘记密码1"
+            android:theme="@style/activityTheme" />
+
+        <activity
+            android:name="com.wustor.usermoudle.account.ForgotPasswordThreeStepActivity"
+            android:label="忘记密码3"
+            android:theme="@style/activityTheme" />
+
+        <activity
+            android:name="com.wustor.usermoudle.account.ForgotPasswordTwoStepActivity"
+            android:label="忘记密码2"
+            android:theme="@style/activityTheme" />
+        <activity
+            android:name="com.wustor.usermoudle.account.LoginActivity"
+            android:label="登录"
+            android:theme="@style/activityTheme" />
+        <activity
+            android:name="com.wustor.usermoudle.account.SelectLoginWayActivity"
+            android:label="选择登录方式"
+            android:theme="@style/activityTheme" />
+
+        <activity
+            android:name="com.wustor.usermoudle.account.VerifyPhoneActivity"
+            android:label="绑定手机号码"
+            android:theme="@style/activityTheme" />
+
+        <activity android:name="com.wustor.usermoudle.record.InvoiceDownloadActivity" />
+
+        <activity
+            android:name="com.wustor.usermoudle.record.AddressActivity"
+            android:label="收货地址"
+            android:theme="@style/activityTheme" />
+
+        <activity
+            android:name="com.wustor.usermoudle.record.AdviceFeedBackActivity"
+            android:label="建议反馈"
+            android:theme="@style/activityTheme" />
+
+        <activity
+            android:name="com.wustor.usermoudle.record.AccountActivity"
+            android:label="购买历史记录"
+            android:theme="@style/activityTheme" />
+
+        <activity
+            android:name="com.wustor.usermoudle.record.DownloadActivity"
+            android:label="材料下载"
+            android:theme="@style/activityTheme"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity android:name="com.wustor.usermoudle.record.DownloadDetailActivity" />
+        <activity
+            android:name="com.wustor.usermoudle.record.FastBuyActivity"
+            android:label="快速下单"
+            android:theme="@style/activityTheme" />
+        <activity
+            android:name="com.wustor.usermoudle.record.FastChargeActivity"
+            android:label="快速充值"
+            android:theme="@style/activityTheme" />
+        <activity
+            android:name="com.wustor.usermoudle.record.LibraryDetailActivity"
+            android:label="常购库列表信息"
+            android:theme="@style/activityTheme" />
+        <activity
+            android:name="com.wustor.usermoudle.record.PurchaseOrderActivity"
+            android:label="购买量排行"
+            android:theme="@style/activityTheme" />
+
+        <activity
+            android:name="com.wustor.usermoudle.record.SecuritySettingActivity"
+            android:label="安全设置"
+            android:theme="@style/activityTheme" />
+        <activity
+            android:name="com.wustor.usermoudle.record.SettingActivity"
+            android:label="设置"
+            android:theme="@style/activityTheme" />
+
+        <activity
+            android:name="com.wustor.usermoudle.record.UserInfoActivity"
+            android:label="个人信息"
+            android:theme="@style/activityTheme" />
+        <activity
+            android:name="com.wustor.moudleres.webview.ContractActivity"
+            android:label="查看交易合同"
+            android:theme="@style/activityTheme" />
+    </application>
+
+
+</manifest>

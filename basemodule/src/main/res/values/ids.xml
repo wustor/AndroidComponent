@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <item type="id" name="iv_url" />
+
+    <!-- Messages IDs -->
+    <item name="decode" type="id" />
+    <item name="decode_failed" type="id" />
+    <item name="decode_succeeded" type="id" />
+    <item name="quit" type="id" />
+    <item name="restart_preview" type="id" />
+    <item name="return_scan_result" type="id" />
+
+    <item name="toolbar" type="id" />
+    <item name="tv_title" type="id" />
+    <item name="swipeRefreshLayout" type="id" />
+    <item name="recyclerView" type="id" />
+    <item name="viewPager" type="id" />
+
+
+    <item name="decode_error" type="id" />
+    <item name="loading_tv" type="id"/>
+    <item name="viewPage" type="id" />
+    <item name="tag" type="id" />
+    <item type="id" name="title" />
+    <item name="ptr_pull_lv_to_refresh" type="id"/>
+    <item name="ptr_pull_rv_to_refresh" type="id" />
+
+</resources>

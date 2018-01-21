@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--背景色-->
+    <color name="white_back">#ffffff</color>
+    <color name="gray">#d9d9d9</color>
+    <color name="gray_back">#f0f0f0</color>
+    <color name="black_back">#333333</color>
+    <color name="green_back">#333333</color>
+    <color name="red_back">#ff3a32</color>
+    <color name="light_black">#666666</color>
+    <color name="transparent">#00000000</color>
+    <color name="coupon">#dddddd</color>
+    <color name="grayline">#cccccc</color>
+    <color name="divider">#ffd2d2d2</color>
+
+    <!--字体颜色-->
+    <color name="gray_text">#666666</color>
+    <color name="gray_">#eeeeee</color>
+    <color name="white_text">#ffffff</color>
+    <color name="black_text">#333333</color>
+    <color name="b_text">#1E1D1D</color>
+    <color name="blue_dark_text">#2C66AD</color>
+    <color name="red_text">#ff3a32</color>
+    <color name="text_gray">#9B9B9B</color>
+    <color name="bg_95">#F2f3f3f3</color>
+
+    <!--分界线颜色-->
+    <color name="gray_line">#ffdddddd</color>
+    <color name="me_black">#1e1d1d</color>
+
+
+    <color name="color_00">#8A000000</color>
+    <color name="colorAccent">@color/blue</color>
+    <color name="blue_80">#CC0068cf</color>
+
+    <color name="blue">#0068cf</color>
+    <color name="text_red">#cf0000</color>
+    <color name="red">#EE0000</color>
+    <color name="yellow">#ff9402</color>
+    <color name="yellow_mine">#fef501</color>
+    <color name="partTranslucent">#39000000</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="grey">#d9d9d9</color>
+
+
+    <color name="line_btn">#BBBBBB</color>
+    <color name="text_brabds">#535353</color>
+    <color name="black">#000000</color>
+    <color name="trans_black">#a6000000</color>
+    <!--蒙版-->
+    <color name="pay">#666666</color>
+    <color name="scan_bg">#7f000000</color>
+
+    <color name="circleindexview_out_gray">#99ffffff</color>
+    <color name="circleindexview_in_green">#53c41a</color>
+    <color name="circleindexview_main_text">#5b5b5b</color>
+    <color name="gray_f4">#f4f4f4</color>
+    <color name="result_view">#b0000000</color>
+    <color name="transparent_color">#00000000</color>
+    <color name="red_fff">#f1f1f1</color>
+    <color name="red_f777">#fff7f7</color>
+</resources>

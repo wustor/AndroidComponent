@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="IndexView">
+        <attr name="currentNumber" format="integer"/>
+    </declare-styleable>
+    <declare-styleable name="circleindexview">
+        <attr name="middleText" format="string"/>
+        <attr name="middleTextSize" format="dimension"/>
+        <attr name="bottomText" format="string"/>
+        <attr name="bottomTextSize" format="dimension"/>
+        <attr name="numberTextSize" format="dimension"/>
+        <attr name="outCircleColor" format="color"/>
+        <attr name="inCircleColor" format="color"/>
+        <attr name="numberColor" format="color"/>
+        <attr name="middleTextColor" format="color"/>
+        <attr name="bottomTextColor" format="color"/>
+    </declare-styleable>
+    <declare-styleable name="SlideMenuItem">
+        <attr name="swipeEnable" format="boolean"/>
+        <attr name="ios" format="boolean"/>
+        <attr name="leftSwipe" format="boolean"/>
+    </declare-styleable>
+    <declare-styleable name="SettingItemView">
+        <attr name="center" format="string"/>
+        <attr name="right" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="UserItemView">
+        <attr name="left" format="string"/>
+        <attr name="end" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="RefreshLayout">
+        <attr name="direction">
+            <enum name="top" value="0"/>
+            <enum name="bottom" value="1"/>
+            <enum name="both" value="2"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="RippleView">
+        <attr name="clickColor" format="color"/>
+        <attr name="alphaFactor" format="float"/>
+        <attr name="hover" format="boolean"/>
+    </declare-styleable>
+    <declare-styleable name="ViewPager">
+        <attr name="orientation">
+            <enum name="horizontal" value="0"/>
+            <enum name="vertical" value="1"/>
+        </attr>
+    </declare-styleable>
+    <attr name="rightPadding" format="dimension"/>
+
+    <declare-styleable name="SlidingMenu">
+        <attr name="rightPadding"/>
+    </declare-styleable>
+    <declare-styleable name="roundedimageview">
+        <attr name="border_thickness" format="dimension"/>
+        <attr name="border_inside_color" format="color"/>
+        <attr name="border_outside_color" format="color"></attr>
+    </declare-styleable>
+    <!-- 标题模板自定义属性 -->
+    <declare-styleable name="TemplateTitle">
+        <!-- 标题文案 -->
+        <attr name="titleText" format="string"/>
+        <!-- 是否有back按钮 -->
+        <attr name="canBack" format="boolean"/>
+        <!-- back按钮文案 -->
+        <attr name="backText" format="string"/>
+        <!-- 右侧更多功能按钮文字 -->
+        <attr name="moreText" format="string"/>
+    </declare-styleable>
+
+    <!-- 条形控制控件自定义属性 -->
+    <declare-styleable name="LineControllerView">
+        <!-- 名称 -->
+        <attr name="name" format="string"/>
+        <!-- 内容或当前状态 -->
+        <attr name="content" format="string"/>
+        <!-- 是否是列表中最后一个 -->
+        <attr name="isBottom" format="boolean"/>
+        <!-- 是否可以跳转 -->
+        <attr name="canNav" format="boolean"/>
+        <!-- 是否是开关 -->
+        <attr name="isSwitch" format="boolean"/>
+    </declare-styleable>
+    <!-- 飘星自定义属性 -->
+    <declare-styleable name="HeartLayout">
+        <attr name="initX" format="dimension"/>
+        <attr name="initY" format="dimension"/>
+        <attr name="xRand" format="dimension"/>
+        <attr name="animLengthRand" format="dimension"/>
+        <attr name="xPointFactor" format="dimension"/>
+        <attr name="animLength" format="dimension"/>
+        <attr name="heart_width" format="dimension"/>
+        <attr name="heart_height" format="dimension"/>
+        <attr name="bezierFactor" format="integer"/>
+        <attr name="anim_duration" format="integer"/>
+    </declare-styleable>
+
+
+    <!--自定义属性集合:CircleView-->
+    <declare-styleable name="PasswordView">
+        <attr name="circle_color_checked" format="color"/>
+        <attr name="circle_color_unchecked" format="color"/>
+        <attr name="number_color_checked" format="color"/>
+        <attr name="number_color_unchecked" format="color"/>
+        <attr name="line_color" format="color"/>
+        <attr name="text_color" format="color"/>
+        <attr name="text_size" format="dimension"/>
+        <attr name="text_padding" format="dimension"/>
+        <attr name="circle_radius" format="dimension"/>
+        <attr name="edge_line_width" format="dimension"/>
+        <attr name="center_line_width" format="dimension"/>
+        <attr name="topName" format="reference"/>
+        <attr name="bottomName" format="reference"/>
+        <attr name="checkedNumber" format="integer"/>
+    </declare-styleable>
+    <declare-styleable name="AmountView">
+        <!-- 左右2边+-按钮的宽度 -->
+        <attr name="btnWidth" format="dimension"/>
+        <!-- 中间TextView的宽度 -->
+        <attr name="tvWidth" format="dimension"/>
+        <!--<attr name="tvColor" format="color"/>-->
+        <attr name="tvTextSize" format="dimension"/>
+        <attr name="btnTextSize" format="dimension"/>
+    </declare-styleable>
+
+
+    <!--倒计时start-->
+    <declare-styleable name="CountdownView">
+        <attr name="isHideTimeBackground" format="boolean" />
+        <attr name="isShowTimeBgDivisionLine" format="boolean" />
+        <attr name="timeBgDivisionLineColor" format="color" />
+        <attr name="timeBgDivisionLineSize" format="dimension" />
+        <attr name="timeBgColor" format="color" />
+        <attr name="timeBgSize" format="dimension" />
+        <attr name="timeBgRadius" format="dimension" />
+
+        <attr name="isTimeTextBold" format="boolean" />
+        <attr name="timeTextSize" format="dimension" />
+        <attr name="timeTextColor" format="color" />
+        <attr name="isShowDay" format="boolean" />
+        <attr name="isShowHour" format="boolean" />
+        <attr name="isShowMinute" format="boolean" />
+        <attr name="isShowSecond" format="boolean" />
+        <attr name="isShowMillisecond" format="boolean" />
+        <attr name="isConvertDaysToHours" format="boolean" />
+
+        <attr name="isSuffixTextBold" format="boolean" />
+        <attr name="suffixTextSize" format="dimension" />
+        <attr name="suffixTextColor" format="color" />
+        <attr name="suffix" format="string" />
+        <attr name="suffixDay" format="string" />
+        <attr name="suffixHour" format="string" />
+        <attr name="suffixMinute" format="string" />
+        <attr name="suffixSecond" format="string" />
+        <attr name="suffixMillisecond" format="string" />
+        <attr name="suffixGravity">
+            <enum name="top" value="0" />
+            <enum name="center" value="1" />
+            <enum name="bottom" value="2" />
+        </attr>
+        <attr name="suffixLRMargin" format="dimension" />
+        <attr name="suffixDayLeftMargin" format="dimension" />
+        <attr name="suffixDayRightMargin" format="dimension" />
+        <attr name="suffixHourLeftMargin" format="dimension" />
+        <attr name="suffixHourRightMargin" format="dimension" />
+        <attr name="suffixMinuteLeftMargin" format="dimension" />
+        <attr name="suffixMinuteRightMargin" format="dimension" />
+        <attr name="suffixSecondLeftMargin" format="dimension" />
+        <attr name="suffixSecondRightMargin" format="dimension" />
+        <attr name="suffixMillisecondLeftMargin" format="dimension" />
+
+        <attr name="isShowTimeBgBorder" format="boolean" />
+        <attr name="timeBgBorderColor" format="color" />
+        <attr name="timeBgBorderSize" format="dimension" />
+        <attr name="timeBgBorderRadius" format="dimension" />
+    </declare-styleable>
+    <!--end-->
+       <declare-styleable name="CustomRefreshLayout">
+        <attr name="scrollableChildId" format="reference"/>
+    </declare-styleable>
+
+
+    <!--侧滑返回 start-->
+    <declare-styleable name="SwipeBackLayout">
+        <attr name="edge_size" format="dimension"/>
+        <attr name="edge_flag">
+            <enum name="left" value="0" />
+            <enum name="right" value="1" />
+            <enum name="bottom" value="2" />
+            <enum name="all" value="3" />
+        </attr>
+        <attr name="shadow_left" format="reference"/>
+        <attr name="shadow_right" format="reference"/>
+        <attr name="shadow_bottom" format="reference"/>
+    </declare-styleable>
+
+    <attr name="SwipeBackLayoutStyle" format="reference"/>
+    <!--侧滑返回 end-->
+
+</resources>

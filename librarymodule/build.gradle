@@ -1,0 +1,28 @@
+apply plugin: 'com.android.library'
+
+def cfg = rootProject.ext.android
+def librarys = rootProject.ext.dependencies
+android {
+    compileSdkVersion cfg.compileSdkVersion
+    buildToolsVersion cfg.buildToolsVersion
+
+
+    defaultConfig {
+        minSdkVersion cfg.minSdkVersion
+        targetSdkVersion cfg.targetSdkVersion
+        multiDexEnabled true
+        versionCode cfg.versionCode//更新次数
+        versionName cfg.versionName//版本号
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+
+}
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile('com.android.support:appcompat-v7:26.1.0') {
+        exclude group: "com.android.support", module: "support-v4"
+    }
+    librarys.each { k, v -> compile v }
+
+}

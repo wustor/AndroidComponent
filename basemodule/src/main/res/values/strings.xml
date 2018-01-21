@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello_world">download</string>
+    <string name="download">d</string>
+    <string name="pause">pause</string>
+    <string name="cancel">cancel</string>
+    <string name="action_pause_all">pause all</string>
+    <string name="action_recover_all">recover all</string>
+    <string name="app_name">创美e药</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="err_token">身份认证过期，请重新登录</string>
+    <!-- 自定义组件 -->
+    <string name="login">登\t录</string>
+    <string name="scan_text">将二维码放入框内, 即可自动扫描</string>
+    <string name="search">搜索品路商品/品牌/旗舰店</string>
+    <string name="city">上海市</string>
+    <string name="no_permissions">应用需要必要的运行权限</string>
+
+    <string name="settings">设置</string>
+    <string name="help">帮助</string>
+    <string name="string_help_text">当前应用缺少必要权限。\n\n请点击\"设置\"-\"权限\"-打开所需权限。\n\n最后点击两次后退按钮，即可返回。</string>
+    <string name="quit">退出</string>
+    <string name="forgetPassword">忘记密码</string>
+    <string name="inputPhone">请输入手机号码</string>
+    <string name="inputVercode">短信校验码</string>
+    <string name="getVerCode">获取验证码</string>
+    <string name="next">下一步</string>
+    <string name="phoneRegister">手机注册</string>
+    <string name="setPwd">设置密码</string>
+    <string name="inputPwd">请输入密码</string>
+    <string name="inputPwdAgain">请再次输入密码</string>
+    <string name="confirm">确认</string>
+    <string name="loginTitle">登录</string>
+    <string name="contact">联\t系\t人：</string>
+    <string name="contactPhone">联系电话：</string>
+    <string name="address">收货地址：</string>
+    <string name="hintArea">请选择区域</string>
+    <string name="hintDetailAddress">请输入详细地址</string>
+    <string name="phoneNumber">18017847277</string>
+    <string name="contactName">XiaoRui</string>
+    <string name="receiveAddress">上海市金沙江西路慧创国际</string>
+    <string name="defaultAddress">默认地址</string>
+    <string name="delete">删除</string>
+    <string name="setDefaultAddress">\t设为默认地址</string>
+    <string name="edit">编辑</string>
+    <string name="area">所在区域：</string>
+    <string name="detailAddress">详细地址：</string>
+    <string name="hintNumber">手机号码：</string>
+    <string name="postcode">邮政编码：</string>
+    <string name="userSet">设置</string>
+    <string name="goodsCollect">我的收藏</string>
+    <string name="shoppable">可采购的店铺</string>
+    <string name="scanHistory">浏览记录</string>
+    <string name="myOrder">我的订单</string>
+    <string name="checkOrders">查看全部订单</string>
+    <string name="notPay">待付款</string>
+    <string name="notSend">待发货</string>
+    <string name="notReceive">待收货</string>
+    <string name="notComment">待评价</string>
+    <string name="returning">已取消</string>
+    <string name="logOut">退出登录</string>
+
+    <string name="selledOrder">卖出的订单</string>
+    <string name="shopuser">门店用户</string>
+    <string name="inUser">用户：</string>
+    <string name="tvPhone">13795433021</string>
+    <string name="inVertify">验证并绑定信息后才能前往采购</string>
+    <string name="brandable">可采购的品牌:</string>
+    <string name="sellable">可销售的品牌:</string>
+
+    <string name="back">返回</string>
+    <string name="account">账户</string>
+    <string name="register">免费注册</string>
+    <string name="registerPhone">手机号</string>
+    <string name="password">登录密码</string>
+    <string name="sendAgain">60秒后重发</string>
+    <string name="registerLogin">注册</string>
+    <string name="newPassword">新密码</string>
+    <string name="submit">提交</string>
+
+    <string name="goods">商品</string>
+    <string name="shop">旗舰店</string>
+    <string name="change">编辑</string>
+
+    <string name="updateShopNum">修改商品数量</string>
+    <string name="myShop">我的购物车</string>
+    <string name="updateAddress">修改地址</string>
+    <string name="numberSub">-</string>
+    <string name="numberAdd">+</string>
+    <string name="shopTotalPrice">商品总价(不含运费)</string>
+    <string name="checkOut">结算</string>
+    <string name="collection">收藏</string>
+
+
+    <string name="sure">确定</string>
+    <string name="sureOrder">确认订单</string>
+    <string name="leaveMeassge">给卖家留言</string>
+    <string name="newMessage">请输入留言内容,可输入160字</string>
+    <string name="all">全部</string>
+    <string name="agree">\t注册代表同意</string>
+    <string name="protacal">《用户服务协议》</string>
+    <string name="name">姓名</string>
+    <string name="messagePhone">手机号码</string>
+    <string name="cancelCollect">取消\n收藏</string>
+    <string name="oldPassword">原密码</string>
+    <string name="InputAccount">请输入手机号或邮箱账号</string>
+    <string name="tv_delete">删除</string>
+    <string name="errcode_success">发送成功</string>
+    <string name="errcode_cancel">发送取消</string>
+    <string name="errcode_deny">发送被拒绝</string>
+    <string name="errcode_unknown">发送返回</string>
+
+    <string name="payOnline">在线支付</string>
+
+    <!-- 自定义组件 -->
+    <string name="pull_to_refresh">下拉可以刷新</string>
+    <string name="release_to_refresh">松开可以刷新</string>
+    <string name="lastUpdateTime">最近更新：%s</string>
+    <string name="load_full">已加载全部</string>
+    <string name="no_data">暂无数据</string>
+    <string name="more">加载中</string>
+
+    <!-- 消除警告，可忽略 -->
+    <string name="d">图片描述</string>
+    <string name="remark">暂无评论</string>
+    <string name="welcome_tips">stay4it.com\n\n有心课堂，传递给你的不仅仅是技术</string>
+    <string name="title_framework_main">快速搭建项目(MD版)</string>
+    <string name="title_recycler_activity">我在Activity</string>
+    <string name="title_recycler_fragment">我在Fragment</string>
+    <string name="title_recycler_section_activity">SectionRecyclerActivity</string>
+    <string name="title_recycler_section_fragment">SectionRecyclerFragment</string>
+
+    <string name="home_tab_news">新闻</string>
+    <string name="home_tab_read">阅读</string>
+    <string name="home_tab_audio">试听</string>
+    <string name="home_tab_topic">话题</string>
+    <string name="home_tab_profile">我</string>
+    <string name="header_text">The Header</string>
+    <string name="footer_text">The Footer</string>
+
+    <!--footer-->
+    <string name="list_footer_loading">正在加载中…</string>
+    <string name="list_footer_network_error">点击重新加载</string>
+    <string name="list_footer_end">已经为你展示所有数据</string>
+
+
+    <string name="tencent_login">正在登录中，请稍候</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="tencent_tls_ui_independentLoginTitle">用户名登录</string>
+    <string name="tencent_tls_ui_independentRegisterTitle">用户名注册</string>
+
+    <string name="action_settings">settings</string>
+
+
+    <string name="btn_take_photo">拍照</string>
+    <string name="btn_pic_photo">从手机相册选择</string>
+    <string name="btn_return_home">返回首页</string>
+    <string name="btn_return">返回</string>
+    <string name="btn_save">保存</string>
+    <string name="btn_cancel">取消</string>
+    <string name="btn_refuse">拒绝</string>
+    <string name="btn_agree">同意</string>
+    <string name="btn_sure">确定</string>
+    <string name="btn_close">关闭</string>
+
+
+    <string name="error_code_prefix">错误码：</string>
+
+
+    <!-- live fragment-->
+    <string name="live_unknown">未知</string>
+    <string name="live_titile">最新直播</string>
+    <string name="dialog_members_tips">邀请互动连线（最多可与三个成员进行互动直播）</string>
+
+
+    <!-- live play -->
+    <string name="send">发送</string>
+    <string name="invite_dialog_tips">主播邀请您与他进行互动直播</string>
+    <string name="live_end_ask_tips">确定结束直播?</string>
+    <string name="live_end_tips">直播结束啦</string>
+    <string name="live_time_tips">直播时长</string>
+    <string name="live_members_tips">观看人数</string>
+    <string name="live_admires_tips">获赞数量</string>
+
+    <string name="live_report_tips">请选择您的举报原因</string>
+    <string name="live_report_dirty">垃圾营销</string>
+    <string name="live_report_false">不实信息</string>
+    <string name="live_report_virus">有害信息</string>
+    <string name="live_report_illegal">违法信息</string>
+    <string name="live_report_yellow">淫秽信息</string>
+
+    <string name="live_host_leave">主播可能暂时离开</string>
+
+    <string name="live_btn_par">par</string>
+    <string name="live_btn_record">录制</string>
+    <string name="live_btn_push">开启推流</string>
+    <string name="live_btn_stop_push">关闭推流</string>
+    <string name="live_btn_stop_record">停录</string>
+
+    <!-- pushstream -->
+    <string name="clip_title">点击地址复制到黏贴版</string>
+    <string name="clip_tip">地址复制到黏贴版上了</string>
+
+    <!-- msgadapter -->
+    <item name="tag_first" type="id"></item>
+    <item name="tag_second" type="id"></item>
+
+
+    <string name="row_profile">profile</string>
+
+
+    <string name="scan_barcode_title">条形码扫描</string>
+    <string name="scan_qrcode_title">二维码扫描</string>
+    <string name="scan_allcode_title">二维码或条形码扫描</string>
+    <string name="scan_barcode_hint">将条形码对入取景框，即可自动扫描</string>
+    <string name="scan_qrcode_hint">将二维码对入取景框，即可自动扫描</string>
+    <string name="scan_allcode_hint">将条形码/二维码放入框内</string>
+    <string name="title_activity_sao_mao">SaoMaoActivity</string>
+
+    <string name="title_activity_jump_to">JumpToActivity</string>
+    <string name="title_activity_my_orders">MyOrdersActivity</string>
+    <string name="hot_search">热门搜索:</string>
+    <string name="change_another">换一组</string>
+    <string name="zxyh">专享优惠</string>
+    <string name="mzzc">活动买赠</string>
+    <string name="mzzc_tip">赠品多多,根本拿不完</string>
+    <string name="mrxp">新品上线</string>
+    <string name="empty_data">这是空数据</string>
+    <string name="wmsydxd">我们是有底线的</string>
+    <string name="xsqg">限时优惠</string>
+    <string name="qgzjjs">抢购中 距结束</string>
+    <!--moduleName-->
+    <string name="app_main">创美e药</string>
+    <string name="cart_name">购物车</string>
+    <string name="goods_name">商品</string>
+    <string name="user_name">用户</string>
+    <string name="order_name">订单</string>
+
+
+</resources>

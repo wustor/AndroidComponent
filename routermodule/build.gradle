@@ -1,0 +1,24 @@
+apply plugin: 'com.android.library'
+def cfg = rootProject.ext.android
+android {
+    compileSdkVersion cfg.compileSdkVersion
+    buildToolsVersion cfg.buildToolsVersion
+
+
+    defaultConfig {
+        minSdkVersion cfg.minSdkVersion
+        targetSdkVersion cfg.targetSdkVersion
+        versionCode cfg.versionCode//更新次数
+        versionName cfg.versionName//版本号
+        resourcePrefix "modulerouter_"
+
+    }
+
+
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile project(':librarymodule')
+    compile 'com.alibaba:arouter-api:1.2.1.1'
+}
