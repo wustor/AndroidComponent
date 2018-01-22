@@ -5,6 +5,7 @@ def appId = rootProject.ext.appId
 def keystoreProperties = new Properties()
 def keystorePropertiesFile = rootProject.file("keystore.properties")
 keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+
 android {
     signingConfigs {
         config {
@@ -70,24 +71,14 @@ android {
         }
     }
 }
+
+project.assemble.doFirst {
+    println "assemble start"
+}
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
-    if (isModuleRun.toBoolean()) {
-        //当isModuleRun true，app得依赖基础库，保证app不报错
-        compile project(':basemodule')
-        compile 'com.alibaba:arouter-api:1.2.1.1'
-        annotationProcessor 'com.alibaba:arouter-compiler:1.1.2.1'
-
-    } else {
-        compile project(':cartmodule')
-        compile project(':goodsmodule')
-        compile project(':ordermodule')
-        compile project(':usermodule')
-        compile 'com.alibaba:arouter-api:1.2.1.1'
-        annotationProcessor 'com.alibaba:arouter-compiler:1.1.2.1'
-
-    }
-    compile 'com.android.support:support-v4:26.1.0'
+    compile project(':routermodule')
+    compile 'com.alibaba:arouter-api:1.2.1.1'
     annotationProcessor 'com.alibaba:arouter-compiler:1.1.2.1'
 
 }

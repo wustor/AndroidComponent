@@ -12,5 +12,8 @@ public class MainApplication extends ModuleApplication {
     @Override
     public void onCreate() {
         super.onCreate();
+        //注册各种组件间的回调接口
+
+
     }
 }

@@ -1,20 +1,13 @@
 package com.wustor.goodsmodule;
 
 
-import android.support.v4.app.Fragment;
 import android.view.View;
 
+import com.alibaba.android.arouter.facade.annotation.Route;
 import com.wustor.basemodule.BaseFragment;
 
-
-/**
- * A simple {@link Fragment} subclass.
- */
+@Route(path = "/com/wustor/goodsmodule/HomeFragment")
 public class HomeFragment extends BaseFragment {
-
-
-    public HomeFragment() {
-    }
 
     @Override
     protected int getLayoutId() {
@@ -23,7 +16,7 @@ public class HomeFragment extends BaseFragment {
 
     @Override
     protected View initView(View parent) {
-        return null;
+        return parent;
     }
 
 }

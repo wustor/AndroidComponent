@@ -1,1 +1,1 @@
-include ':app', ':cartmodule', ':goodsmodule', ':basemodule', ':librarymodule', ':ordermodule', ':usermodule', ':routermodule'
+include ':mainModule', ':cartmodule', ':goodsmodule', ':basemodule', ':librarymodule', ':ordermodule', ':usermodule', ':routermodule'

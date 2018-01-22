@@ -4,16 +4,16 @@ package com.wustor.goodsmodule;
 import android.support.v4.app.Fragment;
 import android.view.View;
 
+import com.alibaba.android.arouter.facade.annotation.Route;
 import com.wustor.basemodule.BaseFragment;
 
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class SortFragment extends BaseFragment {
 
-    public SortFragment() {
-    }
+@Route(path = "/com/wustor/goodsmodule/SortFragment")
+public class SortFragment extends BaseFragment {
 
     @Override
     protected int getLayoutId() {
@@ -22,7 +22,7 @@ public class SortFragment extends BaseFragment {
 
     @Override
     protected View initView(View parent) {
-        return null;
+        return parent;
     }
 
 }

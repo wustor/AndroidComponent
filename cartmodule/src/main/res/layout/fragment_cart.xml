@@ -5,8 +5,9 @@
 
     <TextView
         android:id="@+id/tv_title"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="购物车" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="CartModule，点击进入GoodsModule" />
 
 </FrameLayout>

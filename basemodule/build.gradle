@@ -12,6 +12,12 @@ android {
         targetSdkVersion cfg.targetSdkVersion
         versionCode cfg.versionCode//更新次数
         versionName cfg.versionName//版本号
+        //arouter
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [moduleName: project.getName()]
+            }
+        }
         if (isDebug.toBoolean()) {
             //debug模式
             buildConfigField "String", "AlphaUrl", "\"${url["debug"]}\""
@@ -29,8 +35,6 @@ android {
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
-
-    compile 'com.android.support.constraint:constraint-layout:1.0.2'
     testCompile 'junit:junit:4.12'
-    compile project(':routermodule')
+    compile project(':librarymodule')
 }

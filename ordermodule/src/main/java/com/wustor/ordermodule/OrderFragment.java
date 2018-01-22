@@ -6,8 +6,6 @@ import android.view.View;
 import com.wustor.basemodule.BaseFragment;
 
 public class OrderFragment extends BaseFragment {
-    public OrderFragment() {
-    }
 
     @Override
     protected int getLayoutId() {

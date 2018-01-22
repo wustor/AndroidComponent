@@ -6,7 +6,6 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
 import com.wustor.basemodule.BaseActivity;
-import com.wustor.routermodule.ReflectUtils;
 
 public class MainActivity extends BaseActivity {
     RadioButton bottomHome;
@@ -21,7 +20,7 @@ public class MainActivity extends BaseActivity {
 
     @Override
     protected void initView() {
-        bottomHome=findViewById(R.id.bottom_home);
+        bottomHome = findViewById(R.id.bottom_home);
         radioGroup = findViewById(R.id.radioGroup);
         radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
@@ -42,20 +41,19 @@ public class MainActivity extends BaseActivity {
                 }
             }
         });
-
-        Fragment fragmentHome = ReflectUtils.getFragment("com.wustor.goodsmodule.HomeFragment");
-        Fragment fragmentSort = ReflectUtils.getFragment("com.wustor.goodsmodule.SortFragment");
-        Fragment fragmentCart = ReflectUtils.getFragment("com.wustor.cartmodule.CartFragment");
-        Fragment fragmentMine = ReflectUtils.getFragment("com.wustor.usermodule.MineFragment");
-        list = new Fragment[]{fragmentHome, fragmentSort, fragmentCart, fragmentMine};
-        FragmentTransaction beginTransaction = getSupportFragmentManager().beginTransaction();
-        beginTransaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-        beginTransaction.add(R.id.main, fragmentHome);
-        beginTransaction.add(R.id.main, fragmentSort);
-        beginTransaction.add(R.id.main, fragmentCart);
-        beginTransaction.add(R.id.main, fragmentMine);
-        beginTransaction.commit();
-        showHome();
+//        Fragment fragmentHome = (Fragment) RouterUtils.navigation("/com/wustor/goodsmodule/HomeFragment");
+//        Fragment fragmentSort = (Fragment) RouterUtils.navigation("/com/wustor/goodsmodule/SortFragment");
+//        Fragment fragmentCart = (Fragment) RouterUtils.navigation("/com/wustor/cartmodule/CartFragment");
+//        Fragment fragmentMine = (Fragment) RouterUtils.navigation("/com/wustor/usermodule/MineFragment");
+//        list = new Fragment[]{fragmentHome, fragmentSort, fragmentCart, fragmentMine};
+//        FragmentTransaction beginTransaction = getSupportFragmentManager().beginTransaction();
+//        beginTransaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
+//        beginTransaction.add(R.id.main, fragmentHome);
+//        beginTransaction.add(R.id.main, fragmentSort);
+//        beginTransaction.add(R.id.main, fragmentCart);
+//        beginTransaction.add(R.id.main, fragmentMine);
+//        beginTransaction.commit();
+//        showHome();
 
     }
 
