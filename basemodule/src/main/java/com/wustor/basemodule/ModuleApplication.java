@@ -13,7 +13,7 @@ public class ModuleApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        if (CommonUtils.isAppDebug(getApplicationContext())) {
+        if (CommonUtils.isDebug(getApplicationContext())) {
             ARouter.openDebug();
             ARouter.openLog();
         }

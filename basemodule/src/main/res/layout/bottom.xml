@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="49dp"
+    android:background="#f5f5f5"
+    android:orientation="vertical">
+
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_1"
+        android:background="@color/gray" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/line"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/bottom_home"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:drawablePadding="@dimen/dp_3"
+            android:drawableTop="@drawable/selector_shop_cart"
+            android:gravity="center"
+            android:text="首页"
+            android:textColor="@drawable/selector_text_color_black"
+            android:textSize="10sp" />
+
+        <RadioButton
+            android:id="@+id/bottom_sort"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="@dimen/dp_3"
+            android:drawableTop="@drawable/selector_sort"
+            android:gravity="center"
+            android:text="分类"
+            android:textColor="@drawable/selector_text_color_black"
+            android:textSize="10sp" />
+
+        <RadioButton
+            android:id="@+id/bottom_cart"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="@dimen/dp_3"
+            android:drawableTop="@drawable/selector_message"
+            android:gravity="center"
+            android:text="购物车"
+            android:textColor="@drawable/selector_text_color_black"
+            android:textSize="10sp" />
+
+
+        <RadioButton
+            android:id="@+id/bottom_user"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="false"
+            android:drawablePadding="@dimen/dp_3"
+            android:drawableTop="@drawable/selector_mine"
+            android:gravity="center"
+            android:text="我的"
+            android:textColor="@drawable/selector_text_color_black"
+            android:textSize="10sp" />
+    </RadioGroup>
+
+</RelativeLayout>

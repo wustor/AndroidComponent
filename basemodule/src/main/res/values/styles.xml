@@ -88,7 +88,6 @@
     </style>
 
 
-
     <style name="MatchAuto">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_weight">1</item>
@@ -100,7 +99,6 @@
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
-
 
 
     <style name="style_confirm">
@@ -250,11 +248,6 @@
 
 
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
-
-
-
-
-
 
 
 </resources>

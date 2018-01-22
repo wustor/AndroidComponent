@@ -3,7 +3,10 @@ package com.wustor.basemodule;
 import android.content.Context;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
+import android.os.Looper;
 import android.text.TextUtils;
+import android.view.Gravity;
+import android.widget.Toast;
 
 /**
  * author chmyy
@@ -12,7 +15,9 @@ import android.text.TextUtils;
  */
 
 public class CommonUtils {
-    public static boolean isAppDebug(Context context) {
+
+
+    public static boolean isDebug(Context context) {
         if (TextUtils.isEmpty(context.getPackageName()))
             return false;
         try {
@@ -24,5 +29,23 @@ public class CommonUtils {
             return false;
         }
     }
+
+    //弹出消息
+    public static void showToast(final Context context, final String msg) {
+        if (EmptyUtils.isEmpty(msg) || EmptyUtils.isNull(context)) {
+            return;
+        }
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                Looper.prepare();
+                Toast toast = Toast.makeText(context, msg, Toast.LENGTH_SHORT);
+                toast.setGravity(Gravity.CENTER, 0, 0);
+                toast.show();
+                Looper.loop();
+            }
+        }).start();
+    }
+
 
 }

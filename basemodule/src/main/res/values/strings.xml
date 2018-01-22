@@ -238,6 +238,7 @@
     <string name="goods_name">商品</string>
     <string name="user_name">用户</string>
     <string name="order_name">订单</string>
+    <string name="title_activity_base">BaseActivity</string>
 
 
 </resources>

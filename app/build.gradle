@@ -37,7 +37,7 @@ android {
         targetSdkVersion cfg.targetSdkVersion
         versionCode cfg.versionCode//更新次数
         versionName cfg.versionName//版本号
-        resourcePrefix "app_"
+        //resourcePrefix "app_"
         //arouter
         javaCompileOptions {
             annotationProcessorOptions {
@@ -72,7 +72,22 @@ android {
 }
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
-    compile project(':basemodule')
+    if (isModuleRun.toBoolean()) {
+        //当isModuleRun true，app得依赖基础库，保证app不报错
+        compile project(':basemodule')
+        compile 'com.alibaba:arouter-api:1.2.1.1'
+        annotationProcessor 'com.alibaba:arouter-compiler:1.1.2.1'
+
+    } else {
+        compile project(':cartmodule')
+        compile project(':goodsmodule')
+        compile project(':ordermodule')
+        compile project(':usermodule')
+        compile 'com.alibaba:arouter-api:1.2.1.1'
+        annotationProcessor 'com.alibaba:arouter-compiler:1.1.2.1'
+
+    }
+    compile 'com.android.support:support-v4:26.1.0'
     annotationProcessor 'com.alibaba:arouter-compiler:1.1.2.1'
 
 }
