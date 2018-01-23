@@ -3,6 +3,9 @@ package com.wustor.routermodule;
 import android.content.Context;
 import android.content.Intent;
 import android.support.v4.app.Fragment;
+import android.util.Log;
+
+import com.wustor.basemodule.CommonUtils;
 
 /**
  * author chmyy
@@ -18,7 +21,8 @@ public class ReflectUtils {
             Class fragmentClass = Class.forName(name);
             fragment = (Fragment) fragmentClass.newInstance();
         } catch (Exception e) {
-            throw new RuntimeException(e);
+            Log.d("error--->", e.toString());
+            return null;
         }
         return fragment;
     }
@@ -29,9 +33,9 @@ public class ReflectUtils {
         try {
             Class aClass = Class.forName(name);
             object = aClass.newInstance();
-
         } catch (Exception e) {
-            throw new RuntimeException(e);
+            Log.d("error--->", e.toString());
+            return null;
         }
 
         return object;
@@ -42,7 +46,8 @@ public class ReflectUtils {
             Class clazz = Class.forName(name);
             startActivity(context, clazz);
         } catch (ClassNotFoundException e) {
-            throw new RuntimeException(e);
+            CommonUtils.showToast(context, "业务组件单独调试不应该跟其他业务Module产生交互，如果你依然想要在运行期依赖其它组件，那么请参考MainModul");
+            Log.d("error--->", e.toString());
         }
     }
 

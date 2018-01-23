@@ -5,6 +5,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.wustor.basemodule.BaseActivity;
+import com.wustor.basemodule.CommonUtils;
 import com.wustor.routermodule.CartModuleService;
 import com.wustor.routermodule.ReflectUtils;
 
@@ -37,8 +38,12 @@ public class GoodsDetailActivity extends BaseActivity {
             @Override
             public void onClick(View view) {
                 CartModuleService moduleCall = (CartModuleService) ReflectUtils.getModuleCall("com.wustor.cartmodule.CartServiceImpl");
-                moduleCall.initContext(mContext);
-                moduleCall.getCartAmount();
+                if (moduleCall != null) {
+                    moduleCall.initContext(mContext);
+                    moduleCall.getCartAmount();
+                } else
+                    CommonUtils.showToast(mContext, "业务组件单独调试不应该跟其他业务Module产生交互，如果你依然想要在运行期依赖其它组件，那么请参考MainModule");
+
             }
         });
 

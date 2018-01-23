@@ -5,8 +5,6 @@ import android.content.Context;
 import com.wustor.basemodule.CommonUtils;
 import com.wustor.routermodule.CartModuleService;
 
-import java.math.MathContext;
-
 /**
  * author chmyy
  * created on 2018/1/21
@@ -23,7 +21,8 @@ public class CartServiceImpl implements CartModuleService {
 
     @Override
     public void getCartAmount() {
-        CommonUtils.showToast(context,"我在购物车中被调用了");
+        //TODO 此处应该为异步操作，如果需要获取网络数据，则需要开启线程，拿到数据之后再回调数据给调用者
+        CommonUtils.showToast(context, " 购物车没有商品");
 
     }
 }

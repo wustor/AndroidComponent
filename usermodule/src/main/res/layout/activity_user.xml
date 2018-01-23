@@ -8,6 +8,15 @@
     tools:context="com.wustor.usermodule.UserActivity">
 
     <include layout="@layout/widget_toolbar" />
-
+    <TextView
+        android:id="@+id/tv_module"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:padding="@dimen/dp_10"
+        android:text="UserModule"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/sp_30" />
 
 </LinearLayout>

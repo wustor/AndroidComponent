@@ -64,26 +64,39 @@ android {
             signingConfig signingConfigs.config
         }
     }
+    sourceSets {
+        main {
+            if (isModuleRun.toBoolean()) {
+                manifest.srcFile 'src/main/debug/AndroidManifest.xml'
+            } else {
+                manifest.srcFile 'src/main/AndroidManifest.xml'
+                java {
+                    //release 时 debug 目录下文件不需要合并到主工程
+                    exclude '**/debug/**'
+                }
+            }
+        }
+    }
 }
 
 //编译期组件隔离，运行期组件按需依赖
 //mainModule需要跟cartModule,goodsModule,usersModule进行交互，所以在运行期添加了依赖
-def tasks = project.gradle.startParameter.taskNames
-for (String task : tasks) {
-    def upperName = task.toUpperCase()
-    if (!isModuleRun.toBoolean()) {
+if (!isModuleRun.toBoolean()) {
+    //获取当前运行的task
+    def tasks = project.gradle.startParameter.taskNames
+    for (String task : tasks) {
+        def upperName = task.toUpperCase()
+        //判断task是编译期还是运行期
         if (upperName.contains("ASSEMBLE") || upperName.contains("INSTALL")) {
             dependencies.add("compile", project.project(':' + 'cartmodule'))
             dependencies.add("compile", project.project(':' + 'goodsmodule'))
             dependencies.add("compile", project.project(':' + 'usermodule'))
             dependencies.add("compile", project.project(':' + 'ordermodule'))
         }
+
+
     }
-
-
 }
-
-
 
 
 dependencies {
