@@ -1,97 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    package="com.wustor.goodsmoudle">
-
+    package="com.wustor.goodsmodule">
 
     <application
         android:name=".debug.GoodsApplication"
         android:allowBackup="true"
-        android:label="@string/goods_name"
-        android:supportsRtl="true"
-        tools:replace="android:label"
-        android:theme="@style/AppTheme">
-        <activity android:name=".GoodsActivity">
+        android:label="@string/app_name"
+        android:supportsRtl="true">
+        <activity android:name=".GoodsDetailActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity
-            android:name="com.wustor.goodsmoudle.goods.detail.GoodsDetailActivity"
-            android:launchMode="standard"
-            android:windowSoftInputMode="adjustPan" />
-        <activity android:name="com.wustor.goodsmoudle.goods.detail.GoodsDetailPActivity" />
-
-        <activity
-            android:name="com.wustor.goodsmoudle.goods.filter.GoodsFilterActivity"
-            android:launchMode="singleTask"
-            android:screenOrientation="portrait" />
-
-        <activity
-            android:name="com.wustor.goodsmoudle.goods.filter.GoodsFilterPActivity"
-            android:launchMode="singleTask"
-            android:screenOrientation="portrait" />
-
-        <activity
-            android:name="com.wustor.goodsmoudle.goods.filter.SearchActivity"
-            android:label="搜索"
-            android:windowSoftInputMode="stateAlwaysVisible" />
-
-        <activity
-            android:name="com.wustor.goodsmoudle.goods.list.GoodsListActivity"
-            android:launchMode="singleTask"
-            android:windowSoftInputMode="adjustPan" />
-        <activity
-            android:name="com.wustor.goodsmoudle.goods.list.ListPActivity"
-            android:theme="@style/activityTheme"
-            android:windowSoftInputMode="adjustPan" />
-
-        <activity
-            android:name="com.wustor.goodsmoudle.goods.list.PrivilegeActivity"
-            android:label="特价优惠" />
-
-        <activity
-            android:name="com.wustor.goodsmoudle.home.scan.ScanActivity"
-            android:label="二维码"
-            android:screenOrientation="portrait"
-            android:theme="@style/activityTheme" />
-
-        <activity
-            android:name="com.wustor.goodsmoudle.home.scan.ScanEnterBarcordActivity"
-            android:label="二维码条形码"
-            android:theme="@style/activityTheme" />
-        <activity
-            android:name="com.wustor.goodsmoudle.home.scan.ScanRecordActivity"
-            android:label="二维码扫描记录"
-            android:theme="@style/activityTheme" />
-        <activity android:name="com.wustor.goodsmoudle.home.CertificateActivity" />
-        <activity android:name="com.wustor.goodsmoudle.home.CertificateListActivity" />
-        <activity android:name="com.wustor.goodsmoudle.home.NotifyDetailActivity" />
-
-        <activity
-            android:name="com.wustor.goodsmoudle.home.NotifyListActivity"
-            android:label="消息" />
-        <activity
-            android:name="com.wustor.goodsmoudle.home.SelectCityActivity"
-            android:label="选择地址"
-            android:theme="@style/activityTheme"
-            android:windowSoftInputMode="adjustPan" />
-
-        <activity android:name="com.wustor.goodsmoudle.com.cmyy.chuangmei.SplashActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name="com.wustor.goodsmoudle.DemoActivity"
-            android:label="测试"></activity>
-        <activity android:name="com.wustor.goodsmoudle.MessageSettingActivity" />
     </application>
-
 
 </manifest>

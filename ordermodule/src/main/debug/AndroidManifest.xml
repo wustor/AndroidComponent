@@ -1,63 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    package="com.wustor.ordermoudle">
-
+    package="com.wustor.ordermodule">
 
     <application
         android:name=".debug.OrderApplication"
         android:allowBackup="true"
-        android:label="@string/order_name"
-        android:supportsRtl="true"
-        android:theme="@style/AppTheme"
-        tools:replace="android:label">
-        <activity android:name=".order.OrderActivity">
+        android:supportsRtl="true">
+        <activity android:name=".OrderActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name="com.wustor.ordermoudle.order.OrderListActivity"
-            android:label="我的订单"
-            android:theme="@style/activityTheme" />
-        <activity
-            android:name="com.wustor.ordermoudle.order.OrderDetailActivity"
-            android:label="查看订单"
-            android:theme="@style/activityTheme" />
-        <activity
-            android:name="com.wustor.ordermoudle.OrderConfirmActivity"
-            android:label="提交订单"
-            android:theme="@style/activityTheme" />
-        <activity
-            android:name="com.wustor.ordermoudle.OrderSuccessActivity"
-            android:label="成功下单"
-            android:theme="@style/activityTheme" />
-        <activity
-            android:name="com.wustor.ordermoudle.OrderPayActivity"
-            android:label="订单生成"
-            android:theme="@style/activityTheme" />
-        <activity
-            android:name="com.wustor.ordermoudle.OrderInsufficientActivity"
-            android:label="订单欠款"
-            android:theme="@style/activityTheme" />
-        <activity
-            android:name="com.wustor.ordermoudle.OrderErrorActivity"
-            android:label="订单失败"
-            android:theme="@style/activityTheme" />
-        <activity
-            android:name="com.wustor.ordermoudle.order.ReturnActivity"
-            android:label="查看退货订单"
-            android:theme="@style/activityTheme" />
-        <activity
-            android:name="com.wustor.ordermoudle.order.PackageDetailActivity"
-            android:label="包裹详情"
-            android:theme="@style/activityTheme" />
-        <activity
-            android:name="com.wustor.ordermoudle.order.LogisticsActivity"
-            android:label="查看物流"
-            android:theme="@style/activityTheme" />
     </application>
 
 </manifest>

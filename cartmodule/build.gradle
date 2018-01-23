@@ -68,20 +68,7 @@ android {
     }
 }
 
-//编译期组件隔离，运行期组件按需依赖
-//cartModule需要跟orderModule,goodsModule进行交互，所以在运行期添加了依赖
-def tasks = project.gradle.startParameter.taskNames
-for (String task : tasks) {
-    def upperName = task.toUpperCase()
-    if (isModuleRun.toBoolean()) {
-        if (upperName.contains("ASSEMBLE") || upperName.contains("INSTALL")) {
-            dependencies.add("compile", project.project(':' + 'usermodule'))
-            dependencies.add("compile", project.project(':' + 'goodsmodule'))
-        }
-    }
 
-
-}
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile project(':routermodule')
