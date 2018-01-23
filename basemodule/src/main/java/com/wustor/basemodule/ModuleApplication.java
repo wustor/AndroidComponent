@@ -11,16 +11,9 @@ public class ModuleApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-//        if (CommonUtils.isDebug(getApplicationContext())) {
-//            ARouter.openDebug();
-//            ARouter.openLog();
-//        }
-//        ARouter.init(this);
+
 
     }
-
-
-
 
     public static ModuleApplication getInstance() {
         return instance;

@@ -39,12 +39,6 @@ android {
         versionCode cfg.versionCode//更新次数
         versionName cfg.versionName//版本号
         //resourcePrefix "app_"
-        //arouter
-        javaCompileOptions {
-            annotationProcessorOptions {
-                arguments = [moduleName: project.getName()]
-            }
-        }
 
     }
 
@@ -72,14 +66,29 @@ android {
     }
 }
 
-project.assemble.doFirst {
-    println "assemble start"
+//编译期组件隔离，运行期组件按需依赖
+//mainModule需要跟cartModule,goodsModule,usersModule进行交互，所以在运行期添加了依赖
+def tasks = project.gradle.startParameter.taskNames
+for (String task : tasks) {
+    def upperName = task.toUpperCase()
+    if (!isModuleRun.toBoolean()) {
+        if (upperName.contains("ASSEMBLE") || upperName.contains("INSTALL")) {
+            dependencies.add("compile", project.project(':' + 'cartmodule'))
+            dependencies.add("compile", project.project(':' + 'goodsmodule'))
+            dependencies.add("compile", project.project(':' + 'usermodule'))
+            dependencies.add("compile", project.project(':' + 'ordermodule'))
+        }
+    }
+
+
 }
+
+
+
+
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile project(':routermodule')
-    compile 'com.alibaba:arouter-api:1.2.1.1'
-    annotationProcessor 'com.alibaba:arouter-compiler:1.1.2.1'
 
 }
 

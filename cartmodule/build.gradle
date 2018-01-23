@@ -44,12 +44,6 @@ android {
         versionCode cfg.versionCode//更新次数
         versionName cfg.versionName//版本号
         //resourcePrefix "cartmoudle_"
-        //arouter
-        javaCompileOptions {
-            annotationProcessorOptions {
-                arguments = [moduleName: project.getName()]
-            }
-        }
     }
     lintOptions {
         checkReleaseBuilds false
@@ -73,11 +67,23 @@ android {
         }
     }
 }
+
+//编译期组件隔离，运行期组件按需依赖
+//cartModule需要跟orderModule,goodsModule进行交互，所以在运行期添加了依赖
+def tasks = project.gradle.startParameter.taskNames
+for (String task : tasks) {
+    def upperName = task.toUpperCase()
+    if (isModuleRun.toBoolean()) {
+        if (upperName.contains("ASSEMBLE") || upperName.contains("INSTALL")) {
+            dependencies.add("compile", project.project(':' + 'usermodule'))
+            dependencies.add("compile", project.project(':' + 'goodsmodule'))
+        }
+    }
+
+
+}
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
-    compile 'com.alibaba:arouter-api:1.2.1.1'
-    annotationProcessor 'com.alibaba:arouter-compiler:1.1.2.1'
-    compile 'com.android.support.constraint:constraint-layout:1.0.2'
     compile project(':routermodule')
 }
 

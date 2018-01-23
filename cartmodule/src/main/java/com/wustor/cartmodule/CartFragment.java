@@ -2,14 +2,15 @@ package com.wustor.cartmodule;
 
 
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
-import com.alibaba.android.arouter.facade.annotation.Route;
 import com.wustor.basemodule.BaseFragment;
+import com.wustor.routermodule.ReflectUtils;
 
-@Route(path = "/com/wustor/cartmodule/CartFragment")
 public class CartFragment extends BaseFragment {
-    TextView tvTitle;
+    private TextView tvModule;
+    private Button btnButton;
 
     @Override
     protected int getLayoutId() {
@@ -18,11 +19,14 @@ public class CartFragment extends BaseFragment {
 
     @Override
     protected View initView(View parent) {
-        tvTitle = parent.findViewById(R.id.tv_title);
-        tvTitle.setOnClickListener(new View.OnClickListener() {
+        tvModule = parent.findViewById(R.id.tv_module);
+        btnButton = parent.findViewById(R.id.btn_jump);
+        tvModule.setText("购物车\nCartModule");
+        btnButton.setText("跳转商品详情");
+        btnButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                ReflectUtils.startActivityWithName(mContext, "com.wustor.goodsmodule.GoodsDetailActivity");
 
             }
         });

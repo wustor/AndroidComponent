@@ -6,18 +6,11 @@ android {
     compileSdkVersion cfg.compileSdkVersion
     buildToolsVersion cfg.buildToolsVersion
 
-
     defaultConfig {
         minSdkVersion cfg.minSdkVersion
         targetSdkVersion cfg.targetSdkVersion
         versionCode cfg.versionCode//更新次数
         versionName cfg.versionName//版本号
-        //arouter
-        javaCompileOptions {
-            annotationProcessorOptions {
-                arguments = [moduleName: project.getName()]
-            }
-        }
         if (isDebug.toBoolean()) {
             //debug模式
             buildConfigField "String", "AlphaUrl", "\"${url["debug"]}\""
