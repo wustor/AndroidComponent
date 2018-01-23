@@ -2,7 +2,10 @@ package com.wustor.cartmodule;
 
 import android.content.Context;
 
-import com.wustor.routermodule.CartMoudleService;
+import com.wustor.basemodule.CommonUtils;
+import com.wustor.routermodule.CartModuleService;
+
+import java.math.MathContext;
 
 /**
  * author chmyy
@@ -10,9 +13,17 @@ import com.wustor.routermodule.CartMoudleService;
  * email fat_chao@163.com.
  */
 
-public class CartServiceImpl implements CartMoudleService {
+public class CartServiceImpl implements CartModuleService {
+    private Context context;
+
     @Override
     public void initContext(Context context) {
+        this.context = context;
+    }
+
+    @Override
+    public void getCartAmount() {
+        CommonUtils.showToast(context,"我在购物车中被调用了");
 
     }
 }

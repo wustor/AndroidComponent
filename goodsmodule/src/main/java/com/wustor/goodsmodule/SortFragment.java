@@ -33,7 +33,7 @@ public class SortFragment extends BaseFragment {
         btnButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                ReflectUtils.startActivityWithName(mContext, "com.wustor.cartmodule.CartActivity");
+                ReflectUtils.startActivityWithName(mContext, "com.wustor.goodsmodule.GoodsDetailActivity");
             }
         });
         return parent;

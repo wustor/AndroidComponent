@@ -2,7 +2,7 @@ package com.wustor.goodsmodule;
 
 import android.content.Context;
 
-import com.wustor.routermodule.GoodsMoudleService;
+import com.wustor.routermodule.GoodsModuleService;
 
 /**
  * author chmyy
@@ -10,7 +10,7 @@ import com.wustor.routermodule.GoodsMoudleService;
  * email fat_chao@163.com.
  */
 
-public class GoodsServiceImpl implements GoodsMoudleService {
+public class GoodsServiceImpl implements GoodsModuleService {
 
 
     @Override

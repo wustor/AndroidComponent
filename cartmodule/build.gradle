@@ -25,6 +25,7 @@ android {
         exclude 'META-INF/rxjava.properties'
     }
     compileSdkVersion cfg.compileSdkVersion
+    println cfg.compileSdkVersion
     buildToolsVersion cfg.buildToolsVersion
 
     dexOptions {

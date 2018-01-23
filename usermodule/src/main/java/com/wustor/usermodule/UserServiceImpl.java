@@ -2,7 +2,7 @@ package com.wustor.usermodule;
 
 import android.content.Context;
 
-import com.wustor.routermodule.UserMoudleService;
+import com.wustor.routermodule.UserModuleService;
 
 /**
  * author chmyy
@@ -10,7 +10,7 @@ import com.wustor.routermodule.UserMoudleService;
  * email fat_chao@163.com.
  */
 
-public class UserServiceImpl implements UserMoudleService {
+public class UserServiceImpl implements UserModuleService {
 
 
     @Override

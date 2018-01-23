@@ -6,8 +6,15 @@
 
     <include layout="@layout/widget_toolbar" />
 
+    <Button
+        android:id="@+id/btn_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_20"
+        android:text="获取购物车数量" />
 
-    <include
-        layout="@layout/layout_common"/>
+    <include layout="@layout/layout_common" />
+
 
 </LinearLayout>
