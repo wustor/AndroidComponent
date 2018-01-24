@@ -4,26 +4,11 @@ if (isModuleRun.toBoolean()) {
     apply plugin: 'com.android.library'
 }
 
-//apply from: "package.gradle"
 
 def cfg = rootProject.ext.android
-def url = rootProject.ext.url
 def keystoreProperties = new Properties()
-def keystorePropertiesFile = rootProject.file("keystore.properties")
-keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
 android {
-    signingConfigs {
-        config {
-            v1SigningEnabled true
-            v2SigningEnabled true
-            keyAlias keystoreProperties['keyAlias']
-            keyPassword keystoreProperties['keyPassword']
-            storeFile file(keystoreProperties['storeFile'])
-            storePassword keystoreProperties['storePassword']
-        }
 
-
-    }
     packagingOptions {
         exclude 'META-INF/rxjava.properties'
     }

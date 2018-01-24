@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    >
+    android:orientation="vertical">
+
+    <include layout="@layout/widget_toolbar" />
 
     <TextView
         android:id="@+id/tv_module"
@@ -14,5 +15,5 @@
         android:padding="@dimen/dp_10"
         android:text="MainModule"
         android:textColor="@color/blue"
-        android:textSize="@dimen/sp_30"/>
-</RelativeLayout>
+        android:textSize="@dimen/sp_30" />
+</LinearLayout>

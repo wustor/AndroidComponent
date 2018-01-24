@@ -1,15 +1,18 @@
 package com.wustor.androidcomponent.debug;
 
-import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-
 import com.wustor.androidcomponent.R;
+import com.wustor.basemodule.BaseActivity;
 
-public class MainDebugActivity extends AppCompatActivity {
+public class MainDebugActivity extends BaseActivity {
+
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_debug);
+    protected int getLayoutId() {
+        return R.layout.activity_main_debug;
+    }
+
+    @Override
+    protected void initView() {
+        setTitle("主页面");
     }
 }
