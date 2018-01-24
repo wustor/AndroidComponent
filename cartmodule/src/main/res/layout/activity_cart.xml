@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/cart"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
     <include layout="@layout/widget_toolbar" />
-</FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_module"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:padding="@dimen/dp_10"
+        android:text="CartModule"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/sp_30" />
+</LinearLayout>
